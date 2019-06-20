@@ -16,5 +16,29 @@ namespace SistemaVendas
         {
             InitializeComponent();
         }
+
+        private void btn_CadProdutos_Click(object sender, EventArgs e)
+        {
+            frm_Produtos frm = new frm_Produtos();
+            frm.Show();
+        }
+
+        private void btn_cadCategorias_Click(object sender, EventArgs e)
+        {
+            frm_Categoria frm = new frm_Categoria();
+            frm.Show();
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Produtos frm = new frm_Produtos();
+            frm.Show();
+        }
+
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_Categoria frm = new frm_Categoria();
+            frm.Show();
+        }
     }
 }
