@@ -8,5 +8,16 @@ namespace Sistema.DAL
 {
     public class DataContextFactory
     {
+        private static sistemaDataContext dataContext;
+        sistemaDataContext DataContext
+        {
+            get
+            {
+                if (dataContext == null)
+                    dataContext = new sistemaDataContext();
+                return dataContext;
+            }
+        }
+
     }
 }

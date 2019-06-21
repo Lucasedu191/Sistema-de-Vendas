@@ -38,6 +38,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -118,6 +119,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Money Bag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sistema.DAL\Sistema.DAL.csproj">
+      <Project>{9eb6c2c3-d017-4b14-b078-1ada4588e451}</Project>
+      <Name>Sistema.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
