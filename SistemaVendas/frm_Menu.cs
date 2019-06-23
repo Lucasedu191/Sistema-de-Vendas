@@ -40,5 +40,17 @@ namespace SistemaVendas
             frm_Categoria frm = new frm_Categoria();
             frm.Show();
         }
+
+        private void produtosCategoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_consultaProdutos frm = new frm_consultaProdutos();
+            frm.Show();
+        }
+
+        private void vendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_venda frm = new frm_venda();
+            frm.Show();
+        }
     }
 }
