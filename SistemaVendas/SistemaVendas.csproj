@@ -111,6 +111,7 @@
     <None Include="Properties\DataSources\Sistema.DAL.ItensVenda.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Pessoas.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Produto.datasource" />
+    <None Include="Properties\DataSources\Sistema.DAL.Usuario.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Usuarios.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Venda.datasource" />
     <None Include="Properties\Settings.settings">

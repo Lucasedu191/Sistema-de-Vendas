@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sistema.DAL;
 
 namespace SistemaVendas
 {
@@ -15,6 +16,11 @@ namespace SistemaVendas
         public frm_venda()
         {
             InitializeComponent();
+        }
+
+        private void frm_venda_Load(object sender, EventArgs e)
+        {
+            this.pessoasBindingSource.DataSource = DataContextFactory.DataContext.Pessoas;
         }
     }
 }
