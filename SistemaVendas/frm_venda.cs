@@ -45,14 +45,15 @@ namespace SistemaVendas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Size = new Size(654, 501);
             this.vendaBindingSource.EndEdit();
             DataContextFactory.DataContext.SubmitChanges();
             groupBox1.Visible = true;
             button1.Enabled = false;
-            
 
             this.itensVendaBindingSource.DataSource = DataContextFactory.DataContext.ItensVendas.Where(x => x.CodigoProduto == this.VendaCorrente.CodigoVenda);
             NovoItem();
+            cb_Cliente.Enabled = false;
         }
 
         private void NovoItem()
@@ -122,9 +123,22 @@ namespace SistemaVendas
                 descontoTextBox.Focus();
                 btnFimPedido.Enabled = false;
                 btnFimVenda.Enabled = true;
+                codigoVendaTextBox.Enabled = false;
 
             }
             
+
+        }
+
+        private void btnFimVenda_Click(object sender, EventArgs e)
+        {
+            this.VendaCorrente.Desconto = Convert.ToDecimal(descontoTextBox.Text);
+            this.VendaCorrente.ValorPago = (decimal)(this.VendaCorrente.Valor - this.VendaCorrente.Desconto);
+            this.vendaBindingSource.EndEdit();
+            DataContextFactory.DataContext.SubmitChanges();
+            descontoTextBox.Enabled = false;
+            btnFimVenda.Enabled = false;
+            btnImprimir.Enabled = true;
 
         }
     }

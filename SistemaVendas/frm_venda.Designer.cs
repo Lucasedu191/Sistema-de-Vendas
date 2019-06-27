@@ -80,7 +80,7 @@
             // codigoCategoriaLabel
             // 
             codigoCategoriaLabel.AutoSize = true;
-            codigoCategoriaLabel.Location = new System.Drawing.Point(89, 20);
+            codigoCategoriaLabel.Location = new System.Drawing.Point(89, 14);
             codigoCategoriaLabel.Name = "codigoCategoriaLabel";
             codigoCategoriaLabel.Size = new System.Drawing.Size(39, 13);
             codigoCategoriaLabel.TabIndex = 1;
@@ -155,7 +155,7 @@
             this.cb_Cliente.DisplayMember = "Descricao";
             this.cb_Cliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_Cliente.FormattingEnabled = true;
-            this.cb_Cliente.Location = new System.Drawing.Point(134, 17);
+            this.cb_Cliente.Location = new System.Drawing.Point(134, 11);
             this.cb_Cliente.Name = "cb_Cliente";
             this.cb_Cliente.Size = new System.Drawing.Size(121, 21);
             this.cb_Cliente.TabIndex = 2;
@@ -167,7 +167,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(306, 17);
+            this.button1.Location = new System.Drawing.Point(306, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -298,6 +298,7 @@
             this.btnFimVenda.TabIndex = 17;
             this.btnFimVenda.Text = "Finalizar Venda";
             this.btnFimVenda.UseVisualStyleBackColor = true;
+            this.btnFimVenda.Click += new System.EventHandler(this.btnFimVenda_Click);
             // 
             // btnFimPedido
             // 
@@ -371,7 +372,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(638, 463);
+            this.ClientSize = new System.Drawing.Size(617, 42);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(codigoCategoriaLabel);
