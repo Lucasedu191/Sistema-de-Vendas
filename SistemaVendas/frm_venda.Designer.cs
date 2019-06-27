@@ -38,6 +38,7 @@
             System.Windows.Forms.Label descontoLabel;
             System.Windows.Forms.Label valorPagoLabel;
             System.Windows.Forms.Label codigoStatusLabel;
+            System.Windows.Forms.Label dataVencimentoLabel;
             this.cb_Cliente = new System.Windows.Forms.ComboBox();
             this.pessoasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
@@ -64,6 +65,9 @@
             this.codigoVendaTextBox = new System.Windows.Forms.TextBox();
             this.contasReceberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cb_Pgto = new System.Windows.Forms.ComboBox();
+            this.statusPagamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txt_Data_Vencimento = new System.Windows.Forms.DateTimePicker();
+            this.btnFinalizar = new System.Windows.Forms.Button();
             codigoCategoriaLabel = new System.Windows.Forms.Label();
             codigoVendaLabel = new System.Windows.Forms.Label();
             quantidadeLabel = new System.Windows.Forms.Label();
@@ -73,6 +77,7 @@
             descontoLabel = new System.Windows.Forms.Label();
             valorPagoLabel = new System.Windows.Forms.Label();
             codigoStatusLabel = new System.Windows.Forms.Label();
+            dataVencimentoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pessoasBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
@@ -80,6 +85,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.itensVendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contasReceberBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPagamentoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // codigoCategoriaLabel
@@ -130,7 +136,7 @@
             // valorLabel1
             // 
             valorLabel1.AutoSize = true;
-            valorLabel1.Location = new System.Drawing.Point(463, 316);
+            valorLabel1.Location = new System.Drawing.Point(158, 309);
             valorLabel1.Name = "valorLabel1";
             valorLabel1.Size = new System.Drawing.Size(34, 13);
             valorLabel1.TabIndex = 10;
@@ -139,7 +145,7 @@
             // descontoLabel
             // 
             descontoLabel.AutoSize = true;
-            descontoLabel.Location = new System.Drawing.Point(441, 345);
+            descontoLabel.Location = new System.Drawing.Point(136, 338);
             descontoLabel.Name = "descontoLabel";
             descontoLabel.Size = new System.Drawing.Size(56, 13);
             descontoLabel.TabIndex = 12;
@@ -148,7 +154,7 @@
             // valorPagoLabel
             // 
             valorPagoLabel.AutoSize = true;
-            valorPagoLabel.Location = new System.Drawing.Point(435, 379);
+            valorPagoLabel.Location = new System.Drawing.Point(130, 372);
             valorPagoLabel.Name = "valorPagoLabel";
             valorPagoLabel.Size = new System.Drawing.Size(62, 13);
             valorPagoLabel.TabIndex = 14;
@@ -182,6 +188,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnFinalizar);
+            this.groupBox1.Controls.Add(dataVencimentoLabel);
+            this.groupBox1.Controls.Add(this.txt_Data_Vencimento);
             this.groupBox1.Controls.Add(codigoStatusLabel);
             this.groupBox1.Controls.Add(this.cb_Pgto);
             this.groupBox1.Controls.Add(this.valorTextBox);
@@ -205,7 +214,7 @@
             this.groupBox1.Controls.Add(this.codigoVendaTextBox);
             this.groupBox1.Location = new System.Drawing.Point(12, 44);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(640, 419);
+            this.groupBox1.Size = new System.Drawing.Size(582, 419);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nova Venda";
@@ -236,7 +245,7 @@
             this.dg_Vendas.DataSource = this.itensVendaBindingSource;
             this.dg_Vendas.Location = new System.Drawing.Point(6, 125);
             this.dg_Vendas.Name = "dg_Vendas";
-            this.dg_Vendas.Size = new System.Drawing.Size(614, 167);
+            this.dg_Vendas.Size = new System.Drawing.Size(550, 145);
             this.dg_Vendas.TabIndex = 19;
             this.dg_Vendas.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dg_Vendas_CellFormatting_1);
             // 
@@ -289,7 +298,7 @@
             // btnImprimir
             // 
             this.btnImprimir.Enabled = false;
-            this.btnImprimir.Location = new System.Drawing.Point(276, 376);
+            this.btnImprimir.Location = new System.Drawing.Point(23, 369);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(93, 23);
             this.btnImprimir.TabIndex = 18;
@@ -299,7 +308,7 @@
             // btnFimVenda
             // 
             this.btnFimVenda.Enabled = false;
-            this.btnFimVenda.Location = new System.Drawing.Point(276, 345);
+            this.btnFimVenda.Location = new System.Drawing.Point(23, 338);
             this.btnFimVenda.Name = "btnFimVenda";
             this.btnFimVenda.Size = new System.Drawing.Size(93, 23);
             this.btnFimVenda.TabIndex = 17;
@@ -309,7 +318,7 @@
             // 
             // btnFimPedido
             // 
-            this.btnFimPedido.Location = new System.Drawing.Point(276, 313);
+            this.btnFimPedido.Location = new System.Drawing.Point(23, 306);
             this.btnFimPedido.Name = "btnFimPedido";
             this.btnFimPedido.Size = new System.Drawing.Size(93, 23);
             this.btnFimPedido.TabIndex = 16;
@@ -320,7 +329,7 @@
             // valorPagoTextBox
             // 
             this.valorPagoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vendaBindingSource, "ValorPago", true));
-            this.valorPagoTextBox.Location = new System.Drawing.Point(503, 376);
+            this.valorPagoTextBox.Location = new System.Drawing.Point(198, 369);
             this.valorPagoTextBox.Name = "valorPagoTextBox";
             this.valorPagoTextBox.ReadOnly = true;
             this.valorPagoTextBox.Size = new System.Drawing.Size(100, 20);
@@ -333,7 +342,7 @@
             // descontoTextBox
             // 
             this.descontoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vendaBindingSource, "Desconto", true));
-            this.descontoTextBox.Location = new System.Drawing.Point(503, 342);
+            this.descontoTextBox.Location = new System.Drawing.Point(198, 335);
             this.descontoTextBox.Name = "descontoTextBox";
             this.descontoTextBox.ReadOnly = true;
             this.descontoTextBox.Size = new System.Drawing.Size(100, 20);
@@ -342,7 +351,7 @@
             // valorTextBox1
             // 
             this.valorTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vendaBindingSource, "Valor", true));
-            this.valorTextBox1.Location = new System.Drawing.Point(503, 313);
+            this.valorTextBox1.Location = new System.Drawing.Point(198, 306);
             this.valorTextBox1.Name = "valorTextBox1";
             this.valorTextBox1.ReadOnly = true;
             this.valorTextBox1.Size = new System.Drawing.Size(100, 20);
@@ -381,7 +390,7 @@
             // codigoStatusLabel
             // 
             codigoStatusLabel.AutoSize = true;
-            codigoStatusLabel.Location = new System.Drawing.Point(40, 313);
+            codigoStatusLabel.Location = new System.Drawing.Point(335, 311);
             codigoStatusLabel.Name = "codigoStatusLabel";
             codigoStatusLabel.Size = new System.Drawing.Size(76, 13);
             codigoStatusLabel.TabIndex = 20;
@@ -389,19 +398,57 @@
             // 
             // cb_Pgto
             // 
-            this.cb_Pgto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contasReceberBindingSource, "CodigoStatus", true));
+            this.cb_Pgto.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.contasReceberBindingSource, "CodigoStatus", true));
+            this.cb_Pgto.DataSource = this.statusPagamentoBindingSource;
+            this.cb_Pgto.DisplayMember = "Status";
+            this.cb_Pgto.Enabled = false;
             this.cb_Pgto.FormattingEnabled = true;
-            this.cb_Pgto.Location = new System.Drawing.Point(122, 310);
+            this.cb_Pgto.Location = new System.Drawing.Point(417, 306);
             this.cb_Pgto.Name = "cb_Pgto";
             this.cb_Pgto.Size = new System.Drawing.Size(121, 21);
             this.cb_Pgto.TabIndex = 21;
+            this.cb_Pgto.ValueMember = "CodigoStatus";
+            this.cb_Pgto.SelectedIndexChanged += new System.EventHandler(this.cb_Pgto_SelectedIndexChanged);
+            // 
+            // statusPagamentoBindingSource
+            // 
+            this.statusPagamentoBindingSource.DataSource = typeof(Sistema.DAL.StatusPagamento);
+            // 
+            // dataVencimentoLabel
+            // 
+            dataVencimentoLabel.AutoSize = true;
+            dataVencimentoLabel.Location = new System.Drawing.Point(319, 346);
+            dataVencimentoLabel.Name = "dataVencimentoLabel";
+            dataVencimentoLabel.Size = new System.Drawing.Size(92, 13);
+            dataVencimentoLabel.TabIndex = 21;
+            dataVencimentoLabel.Text = "Data Vencimento:";
+            // 
+            // txt_Data_Vencimento
+            // 
+            this.txt_Data_Vencimento.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.contasReceberBindingSource, "DataVencimento", true));
+            this.txt_Data_Vencimento.Enabled = false;
+            this.txt_Data_Vencimento.Location = new System.Drawing.Point(417, 342);
+            this.txt_Data_Vencimento.Name = "txt_Data_Vencimento";
+            this.txt_Data_Vencimento.Size = new System.Drawing.Size(152, 20);
+            this.txt_Data_Vencimento.TabIndex = 22;
+            // 
+            // btnFinalizar
+            // 
+            this.btnFinalizar.Enabled = false;
+            this.btnFinalizar.Location = new System.Drawing.Point(417, 381);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(93, 23);
+            this.btnFinalizar.TabIndex = 23;
+            this.btnFinalizar.Text = "Finalizar";
+            this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
             // frm_venda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(652, 464);
+            this.ClientSize = new System.Drawing.Size(596, 460);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(codigoCategoriaLabel);
@@ -418,6 +465,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.itensVendaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contasReceberBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPagamentoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -451,5 +499,8 @@
         private System.Windows.Forms.TextBox valorTextBox;
         private System.Windows.Forms.ComboBox cb_Pgto;
         private System.Windows.Forms.BindingSource contasReceberBindingSource;
+        private System.Windows.Forms.Button btnFinalizar;
+        private System.Windows.Forms.DateTimePicker txt_Data_Vencimento;
+        private System.Windows.Forms.BindingSource statusPagamentoBindingSource;
     }
 }

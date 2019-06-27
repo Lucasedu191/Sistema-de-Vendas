@@ -39,12 +39,6 @@
         <elementListCompartment Id="bcc0657a-94d7-48ee-9e01-a30812c055a2" absoluteBounds="0.51499999999999968, 4.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="7fef47bf-27c9-4cb1-b3b4-9380eaca28ca" absoluteBounds="2.75, 4.375, 2, 1.3862939453125">
-      <DataClassMoniker Name="/sistemaDataContext/Usuario" />
-      <nestedChildShapes>
-        <elementListCompartment Id="ff834e38-a780-4c3c-b2ef-60fbb15f209c" absoluteBounds="2.7649999999999997, 4.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <associationConnector edgePoints="[(2.5 : 2.88064697265625); (2.75 : 2.88064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/sistemaDataContext/Usuarios/Usuarios_Venda" />
       <nodes>

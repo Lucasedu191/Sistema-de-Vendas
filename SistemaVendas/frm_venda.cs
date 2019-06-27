@@ -24,6 +24,8 @@ namespace SistemaVendas
             this.pessoasBindingSource.DataSource = DataContextFactory.DataContext.Pessoas;
             this.vendaBindingSource.DataSource = DataContextFactory.DataContext.Vendas;
             this.produtoBindingSource.DataSource = DataContextFactory.DataContext.Produtos;
+            this.statusPagamentoBindingSource.DataSource = DataContextFactory.DataContext.StatusPagamentos;
+            this.contasReceberBindingSource.DataSource = DataContextFactory.DataContext.ContasRecebers;
 
             this.vendaBindingSource.AddNew();
         }
@@ -44,6 +46,13 @@ namespace SistemaVendas
             }
         }
 
+        public ContasReceber ContaCorrente
+        {
+            get
+            {
+                return (ContasReceber)this.contasReceberBindingSource.Current;
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.Size = new Size(658, 501);
@@ -139,8 +148,48 @@ namespace SistemaVendas
             DataContextFactory.DataContext.SubmitChanges();
             descontoTextBox.Enabled = false;
             btnFimVenda.Enabled = false;
-            btnImprimir.Enabled = true;
+            //btnImprimir.Enabled = true;
 
+            cb_Pgto.Enabled = true;
+            this.contasReceberBindingSource.AddNew();
+            this.ContaCorrente.CodigoVenda = this.VendaCorrente.CodigoVenda;
+            this.ContaCorrente.DataCompra = DateTime.Now;
+            this.ContaCorrente.DataVencimento = DateTime.Now;
+
+        }
+
+        private void cb_Pgto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cb_Pgto.SelectedItem != null)
+            {
+                var status = (StatusPagamento)cb_Pgto.SelectedItem;
+                if(status.CodigoStatus == 1)
+                {
+                    this.ContaCorrente.CodigoStatus = (int)status.CodigoStatus;
+                    this.ContaCorrente.DataPagamento = DateTime.Now;
+                    btnFinalizar.Enabled = true;
+                    txt_Data_Vencimento.Enabled = false;
+                }
+                else if(status.CodigoStatus == 2)
+                {
+                    this.ContaCorrente.CodigoStatus = (int)status.CodigoStatus;
+                    this.ContaCorrente.DataVencimento = DateTime.Now;
+                    this.ContaCorrente.DataPagamento = null;
+                    txt_Data_Vencimento.Enabled = true;
+                    btnFinalizar.Enabled = true;
+                }
+            }
+        }
+
+        private void btnFinalizar_Click(object sender, EventArgs e)
+        {
+            this.contasReceberBindingSource.EndEdit();
+            txt_Data_Vencimento.Enabled = false;
+            btnFinalizar.Enabled = false;
+            cb_Pgto.Enabled = false;
+            btnImprimir.Enabled = true;
+            DataContextFactory.DataContext.SubmitChanges();
+            MessageBox.Show("Venda finalizada com sucesso!");
         }
     }
 }

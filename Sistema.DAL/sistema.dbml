@@ -45,13 +45,6 @@
       <Association Name="Pessoas_Venda" Member="Vendas" ThisKey="Codigo" OtherKey="CodigoPessoa" Type="Venda" />
     </Type>
   </Table>
-  <Table Name="dbo.tb_usuario" Member="Usuarios1">
-    <Type Name="Usuario">
-      <Column Name="usuario" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="senha" Member="Senha" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="id_pessoa" Member="CodigoPessoa" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-    </Type>
-  </Table>
   <Table Name="dbo.tb_itens_venda" Member="ItensVendas">
     <Type Name="ItensVenda">
       <Column Name="quantidade" Member="Quantidade" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
