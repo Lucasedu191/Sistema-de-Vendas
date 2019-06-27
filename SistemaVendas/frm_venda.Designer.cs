@@ -37,11 +37,13 @@
             System.Windows.Forms.Label valorLabel1;
             System.Windows.Forms.Label descontoLabel;
             System.Windows.Forms.Label valorPagoLabel;
+            System.Windows.Forms.Label codigoStatusLabel;
             this.cb_Cliente = new System.Windows.Forms.ComboBox();
             this.pessoasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.valorTextBox = new System.Windows.Forms.TextBox();
+            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dg_Vendas = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +52,6 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itensVendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cbProduto = new System.Windows.Forms.ComboBox();
-            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnImprimir = new System.Windows.Forms.Button();
             this.btnFimVenda = new System.Windows.Forms.Button();
             this.btnFimPedido = new System.Windows.Forms.Button();
@@ -61,6 +62,8 @@
             this.btnNovoitem = new System.Windows.Forms.Button();
             this.quantidadeTextBox = new System.Windows.Forms.TextBox();
             this.codigoVendaTextBox = new System.Windows.Forms.TextBox();
+            this.contasReceberBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cb_Pgto = new System.Windows.Forms.ComboBox();
             codigoCategoriaLabel = new System.Windows.Forms.Label();
             codigoVendaLabel = new System.Windows.Forms.Label();
             quantidadeLabel = new System.Windows.Forms.Label();
@@ -69,12 +72,14 @@
             valorLabel1 = new System.Windows.Forms.Label();
             descontoLabel = new System.Windows.Forms.Label();
             valorPagoLabel = new System.Windows.Forms.Label();
+            codigoStatusLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pessoasBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_Vendas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itensVendaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contasReceberBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // codigoCategoriaLabel
@@ -177,6 +182,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(codigoStatusLabel);
+            this.groupBox1.Controls.Add(this.cb_Pgto);
             this.groupBox1.Controls.Add(this.valorTextBox);
             this.groupBox1.Controls.Add(this.dg_Vendas);
             this.groupBox1.Controls.Add(this.cbProduto);
@@ -198,7 +205,7 @@
             this.groupBox1.Controls.Add(this.codigoVendaTextBox);
             this.groupBox1.Location = new System.Drawing.Point(12, 44);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(626, 419);
+            this.groupBox1.Size = new System.Drawing.Size(640, 419);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nova Venda";
@@ -211,6 +218,10 @@
             this.valorTextBox.Name = "valorTextBox";
             this.valorTextBox.Size = new System.Drawing.Size(100, 20);
             this.valorTextBox.TabIndex = 20;
+            // 
+            // produtoBindingSource
+            // 
+            this.produtoBindingSource.DataSource = typeof(Sistema.DAL.Produto);
             // 
             // dg_Vendas
             // 
@@ -274,10 +285,6 @@
             this.cbProduto.TabIndex = 19;
             this.cbProduto.ValueMember = "Codigo";
             this.cbProduto.SelectedIndexChanged += new System.EventHandler(this.cbProduto_SelectedIndexChanged);
-            // 
-            // produtoBindingSource
-            // 
-            this.produtoBindingSource.DataSource = typeof(Sistema.DAL.Produto);
             // 
             // btnImprimir
             // 
@@ -367,12 +374,34 @@
             this.codigoVendaTextBox.Size = new System.Drawing.Size(100, 20);
             this.codigoVendaTextBox.TabIndex = 1;
             // 
+            // contasReceberBindingSource
+            // 
+            this.contasReceberBindingSource.DataSource = typeof(Sistema.DAL.ContasReceber);
+            // 
+            // codigoStatusLabel
+            // 
+            codigoStatusLabel.AutoSize = true;
+            codigoStatusLabel.Location = new System.Drawing.Point(40, 313);
+            codigoStatusLabel.Name = "codigoStatusLabel";
+            codigoStatusLabel.Size = new System.Drawing.Size(76, 13);
+            codigoStatusLabel.TabIndex = 20;
+            codigoStatusLabel.Text = "Forma de Pgto";
+            // 
+            // cb_Pgto
+            // 
+            this.cb_Pgto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.contasReceberBindingSource, "CodigoStatus", true));
+            this.cb_Pgto.FormattingEnabled = true;
+            this.cb_Pgto.Location = new System.Drawing.Point(122, 310);
+            this.cb_Pgto.Name = "cb_Pgto";
+            this.cb_Pgto.Size = new System.Drawing.Size(121, 21);
+            this.cb_Pgto.TabIndex = 21;
+            // 
             // frm_venda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(617, 42);
+            this.ClientSize = new System.Drawing.Size(652, 464);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(codigoCategoriaLabel);
@@ -384,10 +413,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pessoasBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_Vendas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itensVendaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contasReceberBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,5 +449,7 @@
         private System.Windows.Forms.BindingSource produtoBindingSource;
         private System.Windows.Forms.TextBox quantidadeTextBox;
         private System.Windows.Forms.TextBox valorTextBox;
+        private System.Windows.Forms.ComboBox cb_Pgto;
+        private System.Windows.Forms.BindingSource contasReceberBindingSource;
     }
 }

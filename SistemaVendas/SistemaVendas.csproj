@@ -108,9 +108,11 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\Sistema.DAL.Categoria.datasource" />
+    <None Include="Properties\DataSources\Sistema.DAL.ContasReceber.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.ItensVenda.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Pessoas.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Produto.datasource" />
+    <None Include="Properties\DataSources\Sistema.DAL.StatusPagamento.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Usuario.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Usuarios.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Venda.datasource" />

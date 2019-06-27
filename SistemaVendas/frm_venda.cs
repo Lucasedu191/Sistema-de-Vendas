@@ -20,6 +20,7 @@ namespace SistemaVendas
 
         private void frm_venda_Load(object sender, EventArgs e)
         {
+            this.Size = new Size(659, 81);
             this.pessoasBindingSource.DataSource = DataContextFactory.DataContext.Pessoas;
             this.vendaBindingSource.DataSource = DataContextFactory.DataContext.Vendas;
             this.produtoBindingSource.DataSource = DataContextFactory.DataContext.Produtos;
@@ -45,7 +46,7 @@ namespace SistemaVendas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(654, 501);
+            this.Size = new Size(658, 501);
             this.vendaBindingSource.EndEdit();
             DataContextFactory.DataContext.SubmitChanges();
             groupBox1.Visible = true;
