@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SistemaVendas.Properties {
+namespace Sistema.DAL.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace SistemaVendas.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SistemaVendas.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sistema.DAL.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,29 +63,9 @@ namespace SistemaVendas.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cadastro_produtos_40_x_40 {
+        internal static System.Drawing.Bitmap fundo_sistema {
             get {
-                object obj = ResourceManager.GetObject("cadastro produtos 40 x 40", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap devolucao_fornecedores_30x30 {
-            get {
-                object obj = ResourceManager.GetObject("devolucao fornecedores 30x30", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap devolucao_fornecedores_40x40 {
-            get {
-                object obj = ResourceManager.GetObject("devolucao fornecedores 40x40", resourceCulture);
+                object obj = ResourceManager.GetObject("fundo sistema", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,26 +76,6 @@ namespace SistemaVendas.Properties {
         internal static System.Drawing.Bitmap fundo_sistema_azul {
             get {
                 object obj = ResourceManager.GetObject("fundo sistema azul", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap login_escuro {
-            get {
-                object obj = ResourceManager.GetObject("login escuro", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap vendas3 {
-            get {
-                object obj = ResourceManager.GetObject("vendas3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

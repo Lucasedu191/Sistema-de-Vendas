@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema.DAL
+namespace SistemaVendas
 {
     public partial class frm_Login : Form
     {

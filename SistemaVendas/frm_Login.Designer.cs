@@ -1,4 +1,4 @@
-﻿namespace Sistema.DAL
+﻿namespace SistemaVendas
 {
     partial class frm_Login
     {

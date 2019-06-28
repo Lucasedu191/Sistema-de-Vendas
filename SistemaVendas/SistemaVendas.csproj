@@ -62,6 +62,12 @@
     <Compile Include="frm_consultaProdutos.Designer.cs">
       <DependentUpon>frm_consultaProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,7 @@
     <None Include="Properties\DataSources\Sistema.DAL.Pessoas.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Produto.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.StatusPagamento.datasource" />
+    <None Include="Properties\DataSources\Sistema.DAL.tb_usuario.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Usuario.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Usuarios.datasource" />
     <None Include="Properties\DataSources\Sistema.DAL.Venda.datasource" />
