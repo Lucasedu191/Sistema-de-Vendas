@@ -73,6 +73,26 @@ namespace SistemaVendas.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cadeado_icone_55x45 {
+            get {
+                object obj = ResourceManager.GetObject("cadeado icone 55x45", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap deletar_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("deletar 32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap devolucao_fornecedores_30x30 {
             get {
                 object obj = ResourceManager.GetObject("devolucao fornecedores 30x30", resourceCulture);

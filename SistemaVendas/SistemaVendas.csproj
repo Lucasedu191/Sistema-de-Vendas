@@ -94,6 +94,9 @@
     <EmbeddedResource Include="frm_consultaProdutos.resx">
       <DependentUpon>frm_consultaProdutos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Menu.resx">
       <DependentUpon>frm_Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Money Bag.ico" />
+    <None Include="Resources\login escuro.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sistema.DAL\Sistema.DAL.csproj">
