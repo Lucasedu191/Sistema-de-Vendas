@@ -16,7 +16,16 @@ namespace SistemaVendas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Menu());
+
+            frm_Login frm = new frm_Login();
+            frm.ShowDialog();
+
+            if (frm.logado == true)
+            {
+                Application.Run(new frm_Menu());
+            }
+
+            
         }
     }
 }

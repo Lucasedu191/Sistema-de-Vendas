@@ -156,6 +156,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Money Bag.ico" />
+    <None Include="Resources\deletar 32x32.png" />
+    <None Include="Resources\cadeado icone 55x45.png" />
     <None Include="Resources\login escuro.jpg" />
   </ItemGroup>
   <ItemGroup>

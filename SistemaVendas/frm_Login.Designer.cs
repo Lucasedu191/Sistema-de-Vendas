@@ -32,17 +32,14 @@
             System.Windows.Forms.Label usuarioLabel;
             System.Windows.Forms.Label senhaLabel;
             this.tb_usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usuarioTextBox = new System.Windows.Forms.TextBox();
-            this.senhaTextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.btn_login = new System.Windows.Forms.Button();
+            this.btn_sair_login = new System.Windows.Forms.Button();
             usuarioLabel = new System.Windows.Forms.Label();
             senhaLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tb_usuarioBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tb_usuarioBindingSource
-            // 
-            this.tb_usuarioBindingSource.DataSource = typeof(Sistema.DAL.tb_usuario);
             // 
             // usuarioLabel
             // 
@@ -56,14 +53,6 @@
             usuarioLabel.TabIndex = 1;
             usuarioLabel.Text = "Usuário:";
             // 
-            // usuarioTextBox
-            // 
-            this.usuarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_usuarioBindingSource, "usuario", true));
-            this.usuarioTextBox.Location = new System.Drawing.Point(242, 51);
-            this.usuarioTextBox.Name = "usuarioTextBox";
-            this.usuarioTextBox.Size = new System.Drawing.Size(100, 20);
-            this.usuarioTextBox.TabIndex = 2;
-            // 
             // senhaLabel
             // 
             senhaLabel.AutoSize = true;
@@ -76,27 +65,61 @@
             senhaLabel.TabIndex = 3;
             senhaLabel.Text = "Senha:";
             // 
-            // senhaTextBox
+            // tb_usuarioBindingSource
             // 
-            this.senhaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_usuarioBindingSource, "senha", true));
-            this.senhaTextBox.Location = new System.Drawing.Point(242, 100);
-            this.senhaTextBox.Name = "senhaTextBox";
-            this.senhaTextBox.PasswordChar = '*';
-            this.senhaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.senhaTextBox.TabIndex = 4;
+            this.tb_usuarioBindingSource.DataSource = typeof(Sistema.DAL.Usuarios);
             // 
-            // button1
+            // txtUsuario
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(189, 208);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.txtUsuario.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_usuarioBindingSource, "usuario", true));
+            this.txtUsuario.Location = new System.Drawing.Point(242, 51);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuario.TabIndex = 2;
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_usuarioBindingSource, "senha", true));
+            this.txtSenha.Location = new System.Drawing.Point(242, 100);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(100, 20);
+            this.txtSenha.TabIndex = 4;
+            // 
+            // btn_login
+            // 
+            this.btn_login.BackColor = System.Drawing.Color.Transparent;
+            this.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_login.ForeColor = System.Drawing.Color.White;
+            this.btn_login.Image = global::SistemaVendas.Properties.Resources.cadeado_icone_55x45;
+            this.btn_login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_login.Location = new System.Drawing.Point(161, 208);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(103, 48);
+            this.btn_login.TabIndex = 5;
+            this.btn_login.Text = "Login";
+            this.btn_login.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            // 
+            // btn_sair_login
+            // 
+            this.btn_sair_login.BackColor = System.Drawing.Color.Transparent;
+            this.btn_sair_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_sair_login.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_sair_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sair_login.ForeColor = System.Drawing.Color.White;
+            this.btn_sair_login.Image = global::SistemaVendas.Properties.Resources.deletar_32x32;
+            this.btn_sair_login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_sair_login.Location = new System.Drawing.Point(291, 208);
+            this.btn_sair_login.Name = "btn_sair_login";
+            this.btn_sair_login.Size = new System.Drawing.Size(99, 39);
+            this.btn_sair_login.TabIndex = 6;
+            this.btn_sair_login.Text = "Sair";
+            this.btn_sair_login.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_sair_login.UseVisualStyleBackColor = false;
+            this.btn_sair_login.Click += new System.EventHandler(this.btn_sair_login_Click);
             // 
             // frm_Login
             // 
@@ -104,11 +127,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistemaVendas.Properties.Resources.login_escuro;
             this.ClientSize = new System.Drawing.Size(542, 317);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_sair_login);
+            this.Controls.Add(this.btn_login);
             this.Controls.Add(senhaLabel);
-            this.Controls.Add(this.senhaTextBox);
+            this.Controls.Add(this.txtSenha);
             this.Controls.Add(usuarioLabel);
-            this.Controls.Add(this.usuarioTextBox);
+            this.Controls.Add(this.txtUsuario);
             this.Name = "frm_Login";
             this.Text = "frm_Login";
             ((System.ComponentModel.ISupportInitialize)(this.tb_usuarioBindingSource)).EndInit();
@@ -120,8 +144,9 @@
         #endregion
 
         private System.Windows.Forms.BindingSource tb_usuarioBindingSource;
-        private System.Windows.Forms.TextBox usuarioTextBox;
-        private System.Windows.Forms.TextBox senhaTextBox;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.Button btn_sair_login;
     }
 }
