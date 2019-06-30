@@ -134,6 +134,7 @@
             this.Controls.Add(usuarioLabel);
             this.Controls.Add(this.txtUsuario);
             this.Name = "frm_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Login";
             ((System.ComponentModel.ISupportInitialize)(this.tb_usuarioBindingSource)).EndInit();
             this.ResumeLayout(false);
