@@ -57,6 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContextFactory.cs" />
+    <Compile Include="db_SistemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_SistemaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +93,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="db_SistemaDataSet.xsc">
+      <DependentUpon>db_SistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_SistemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_SistemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_SistemaDataSet.xss">
+      <DependentUpon>db_SistemaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -116,6 +132,7 @@
     <EmbeddedResource Include="Relatórios\Relatorios de Pedidos.resx">
       <DependentUpon>Relatorios de Pedidos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Relatórios\rel_pedidos.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fundo sistema azul.png" />
