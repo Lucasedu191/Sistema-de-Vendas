@@ -28,20 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
+            // 
+            // reportViewer2
+            // 
+            this.reportViewer2.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer2.Name = "ReportViewer";
+            this.reportViewer2.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer2.TabIndex = 0;
             // 
             // rel_de_Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 301);
+            this.ClientSize = new System.Drawing.Size(673, 402);
             this.Name = "rel_de_Pedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relatorios de Pedidos";
+            this.Load += new System.EventHandler(this.rel_de_Pedidos_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
     }
 }

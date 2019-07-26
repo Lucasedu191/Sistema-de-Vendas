@@ -118,28 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cadeado icone 55x45" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadeado icone 55x45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login escuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login escuro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cadastro produtos 40 x 40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cadastro produtos 40 x 40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="devolucao fornecedores 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\devolucao fornecedores 40x40.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fundo sistema azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundo sistema azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="money" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="devolucao fornecedores 30x30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\devolucao fornecedores 30x30.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuarios 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuarios 40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="devolucao fornecedores 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\devolucao fornecedores 40x40.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deletar 32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deletar 32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cadeado icone 55x45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadeado icone 55x45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money 40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="consultas 40x40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\consultas 40x40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login escuro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login escuro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cadastro clientes 40 x 40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadastro clientes 40 x 40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vendas3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vendas3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="deletar 32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deletar 32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="couple64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\couple64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sair 40 x 35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair 40 x 35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

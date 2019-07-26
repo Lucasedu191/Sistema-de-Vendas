@@ -1,0 +1,125 @@
+[33mcommit fdaea08cc0f77e3ed392b9b3f755e8e59c2256b5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Sat Jul 6 15:19:48 2019 -0300
+
+    criando o relatorio de pedidos
+
+[33mcommit 4cb0ae3a7827cef3ccdd0442c070238d270132ba[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Sat Jun 29 22:59:42 2019 -0300
+
+    Programando o login e fazendo o report das vendas
+
+[33mcommit 31e45c397c242a97dae0649657e81807088f958c[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Sat Jun 29 20:41:23 2019 -0300
+
+    Programando o login
+
+[33mcommit 700ac64161eb147aa57aa197143475f4deec679d[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Fri Jun 28 20:00:25 2019 -0300
+
+    Criando os botoes do login
+
+[33mcommit 1eb8d8a8668a5597782d54bc311c001d9455dce0[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Thu Jun 27 22:10:01 2019 -0300
+
+    Criando o form de Login
+
+[33mcommit 4f7ebe3d7bbb16a595f397fbd3fb824eb64306bd[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Thu Jun 27 00:19:46 2019 -0300
+
+    Finalizando form venda com a forma de pagamaneto a prazo e criando a tabela login e criando form login
+
+[33mcommit 7b859a00b012898ca904e5f02f76f5ce6d6df22e[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Wed Jun 26 23:04:15 2019 -0300
+
+    Criando as formas de pagamento
+
+[33mcommit 5d87d9a5e787768d6c13f435ae607bdf092296e2[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Wed Jun 26 22:18:15 2019 -0300
+
+    finalizando a programação da tela nova venda e criando as tabelas para contas a receber
+
+[33mcommit 019b2d123a1779af646c1841e38cc6ad93e39f77[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Wed Jun 26 00:00:45 2019 -0300
+
+    programando o form de vendas e programando o fechamento da venda total, desconto
+
+[33mcommit c322b8892fc054cca579d4acfc1dc6c52ae11bb1[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Mon Jun 24 20:14:31 2019 -0300
+
+    programando o form de vendas
+
+[33mcommit 029a74f636d32202b8e74083c741a8187a494c4f[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Mon Jun 24 19:30:58 2019 -0300
+
+    criando mais algumas tabelas: vendas, usuarios, cliente. Criando form vendas
+
+[33mcommit ea9175b94f54d8e1441727f7d549149964535535[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Sat Jun 22 21:21:35 2019 -0300
+
+    criando consulta de produtos, tabelas de vendas, form de vendas
+
+[33mcommit fb3be45061fe0ab36c204fdbe5e8fa29bf8baa37[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Fri Jun 21 22:52:53 2019 -0300
+
+    Criando metodo para verificar campo, categoria, se existe item nela e validação de exclusão
+
+[33mcommit d5aeee182b3eb5aa7e511a37350e4b9cde53ba25[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Fri Jun 21 21:37:11 2019 -0300
+
+    Bucando dados para o Grid, programando botao novo, cadastrar, cancelar e excluir
+
+[33mcommit 4990fa296001b64d4de8edc6a293faa85bbdf648[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Fri Jun 21 17:03:16 2019 -0300
+
+    criando o data context para conexão do BD
+
+[33mcommit 0e0d8c3d592f784b937798b86c88b546bd29f09a[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Fri Jun 21 16:47:34 2019 -0300
+
+    Criando backup do BD, conectando o banco ao projeto
+
+[33mcommit fa79e80725f455049857899282c09c469a56e847[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Thu Jun 20 18:32:18 2019 -0300
+
+    Abertura do form, componentes do form Produtos
+
+[33mcommit 2017277c10c974e4bdbebe8fa0833d3de4a39227[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Thu Jun 20 17:51:50 2019 -0300
+
+    Criando form de produtos e categoria
+
+[33mcommit 3cc958552f2a8c539e0c535359f9d6c30da67624[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Thu Jun 20 16:45:09 2019 -0300
+
+    Adicionando Botão cadastro de produto
+
+[33mcommit 83d3e9dbd1f0a782e1e8eba83a701112d8dd0311[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Thu Jun 20 15:13:25 2019 -0300
+
+    Descrição
+
+[33mcommit 4528c161a3c1e97d29885b3df558416c025d0931[m
+Author: Lucasedu191 <lucasatletico@hotmail.com>
+Date:   Thu Jun 20 13:51:15 2019 -0300
+
+    Criação projeto sistema de comercio

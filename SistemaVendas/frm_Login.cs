@@ -43,7 +43,7 @@ namespace SistemaVendas
 
         private void btn_sair_login_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+           
         }
     }
 }

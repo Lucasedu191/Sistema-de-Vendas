@@ -52,5 +52,38 @@ namespace SistemaVendas
             frm_venda frm = new frm_venda();
             frm.Show();
         }
+
+        private void produtosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frm_consultaProdutos frm = new frm_consultaProdutos();
+            frm.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frm_venda frm = new frm_venda();
+            frm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

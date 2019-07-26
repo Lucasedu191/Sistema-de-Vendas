@@ -16,5 +16,10 @@ namespace Sistema.DAL.Relatórios
         {
             InitializeComponent();
         }
+
+        private void rel_de_Pedidos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
